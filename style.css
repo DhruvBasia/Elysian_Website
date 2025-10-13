@@ -1,0 +1,196 @@
+/* ... existing code ... -->
+/* --- HEADER --- */
+.main-header {
+    position: absolute; /* Makes the header float over the hero image */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensures the header is on top of other content */
+    height: 100px; /* Increased height for bigger logo */
+}
+
+.header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    height: 70px; /* Increased logo size */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--white-text);
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--light-purple);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links img {
+    height: 22px;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background-image: url('assets/2.png');
+    height: 100vh; /* Makes the hero section fill the entire screen height */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    max-width: none;
+}
+
+/* --- ABOUT US SECTION --- */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.about-text {
+    flex: 1;
+}
+.about-text h2 {
+    text-align: left;
+}
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+.about-graphic {
+    flex: 1;
+}
+.about-graphic img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- EVENT BANNER --- */
+.event-banner {
+    background-image: url('assets/event-banner-bg.jpg'); /* YOU NEED TO EXPORT THIS IMAGE */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.event-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Dark overlay */
+}
+.event-content {
+    position: relative; /* To appear above the overlay */
+    z-index: 1;
+}
+.event-dates {
+    font-size: 18px;
+}
+.event-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.event-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn-explore {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid var(--white-text);
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--white-text);
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+.btn-explore:hover {
+    background-color: var(--light-purple);
+    border-color: var(--light-purple);
+}
+
+/* --- REWIND SECTION --- */
+.rewind-section h2 {
+    margin-bottom: 40px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* --- FAQ SECTION --- */
+.faq-section h2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.faq-container details {
+    background-color: #E9E1F5; /* A light lavender */
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.faq-container summary {
+    font-weight: 700;
+    font-size: 18px;
+}
+.faq-container details p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    border-top: 1px solid #444;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-logo img {
+    height: 30px;
+}
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+.footer-social img {
+    height: 24px;
+}
+
